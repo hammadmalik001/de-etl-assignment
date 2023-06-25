@@ -91,6 +91,5 @@ except Exception as e:
     print(f"Error occurred while loading data into table {mysql_table_name}: "
           f"{str(e)}")
 finally:
-    # close postgres connection as well.
     psql_engine.dispose()
     mysql_engine.dispose()
